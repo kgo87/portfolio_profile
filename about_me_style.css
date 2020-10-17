@@ -1,0 +1,299 @@
+/* Sets up the variables for frequently used parameters */
+:root{
+    --h-font-color: #445877;
+    --nav-h-color: #92ccce;
+    --nav-color: #31343d;
+    --dark-color: #1c1d21;
+    --light-color: #eeeef7;
+    --typ-font: Arial, Helvetica, sans-serif;  
+}
+
+/* Sets the display format to include padding and borderin the element's total width and height, 
+and also removes the default padding and margin settings for the entire page contents  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sets the background color of the main block  */
+body {
+    background-color:var(--light-color);
+    display:flex;
+    flex-direction: column;
+}
+
+/* Creates padding on all sides of the header block and sets the font size, background color,
+color and relative position  */
+header {
+    padding: 10px 40px 20px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--nav-color);
+    position: relative;
+}
+
+/* Displays the header element as block and sets the font size  */
+header h1 {
+    display: inline-block;
+    font-size: 40px;
+    background-color: var(--nav-h-color);
+    color: var(--dark-color);
+    position: absolute;
+    text-align: right;
+    left: 0px;
+    width: 350px;
+}
+
+/* Sets padding, margin and font of the nav bar */
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 18px;
+}
+
+/* Removes bullet symbols from the list */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Sets the display of the list items and left margin */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Sets the color of the links and creates an underline */
+header nav ul li a {
+    color: var(--nav-h-color);
+    text-decoration: none;
+    border-bottom: solid 3px;
+}
+
+
+/* Sets the display properties of the top/background figure element */
+figure {
+    height: 200px;
+    width: 100vw;
+    margin-bottom: 25px;
+    background-image: url("blanca_lake.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sets the properties of subtitle box */
+.subtitle{
+    position: absolute;
+    background-color: var(--nav-h-color);
+    color: var(--dark-color);
+    text-align: center;
+    padding: 15px;
+    width: 250px;
+    font-family: var(--typ-font);
+    font-size: 24px;
+    font-weight:bold;
+    top:200px;
+    right: 50px;
+}
+
+
+/* Sets margin, width and display parameters of the main block */
+main {
+    width: 100vw;
+    margin-left: 20px;
+    margin-right:20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Sets display properties: margin, padding , heights, font, color, etc */
+.content_item {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: var(--typ-font);
+    display:flex;
+    width: 90vw;
+    color: var(--h-font-color);
+}
+
+/* Sets the display options and parameters of the headings of sections inside the main body */
+.content_item h1 {
+    width: 20%;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: var(--typ-font);
+    color: var(--h-font-color);
+    border-right: solid var(--h-font-color);
+}
+
+/* Sets the display properties of the container inside each section */
+div{
+    display:flex;
+    flex-direction:column;
+    padding-left: 30px;
+    width: 80%;
+}
+
+/* Sets the display options and the properties of the large item in the work section */
+.large_box{
+    height: 300px;
+    background: rgba(0,34,36);
+    background: linear-gradient(90deg, rgba(0,34,36,1) 0%, rgba(29,157,127,1) 35%, rgba(0,212,255,1) 100%);
+    border: solid var(--nav-h-color);
+    margin-bottom:10px;
+    position: relative;
+    opacity:0.8;
+}
+
+/* Sets the parameters of the title of each project inside work section */
+h3{
+    position: absolute;
+    background-color: var(--nav-h-color);
+    color: var(--dark-color);
+    opacity:1;
+    text-align: left;
+    padding: 8px;
+    font-family: var(--typ-font);
+    font-size: 1.25em;
+    font-weight:bold;
+    bottom: 15px;
+    left: 0px;
+}
+
+/* Sets parameters of the short description of each project inside work section */
+h3 .sm {
+    color: var(--dark-color);
+    font-size: 0.5em;
+}
+
+/* Sets the display options and the properties of the "row" that constains two small items in the work section */
+.small_box{
+    height: 120px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* Sets the display options and the properties of the small item in the work section */
+.inner_box{
+    width: 49%; 
+    height: 120px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(121,29,253,1) 50%, rgba(252,176,69,1) 100%);
+    opacity:0.8;
+    border: solid var(--nav-h-color);
+    margin-bottom:10px;
+    position: relative;
+}
+
+
+/* Sets the font size of paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Sets display properties of the contact details nav bar */
+.content_item div nav {
+    padding-top: 30px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    justify-items: center;
+}
+
+/* Removes bullet symbols from the list and spaces the items evenly in a row */
+.content_item div nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Displays items as a block */
+.content_item div nav ul li {
+    display: inline-block;
+}
+
+/* Sets the display properties of list items */
+.content_item div nav ul li a {
+    text-decoration: none;
+    color: var(--h-font-color);
+    border-bottom: solid 3px;
+}
+
+
+/* Sets content highlight color and background */
+::selection {
+    background-color: var(--nav-h-color);
+    color: var(--nav-h-color);
+    opacity:1
+}
+/* On click, select all contents so the code is highlighted */
+.large_box:active {
+    user-select: all;
+}
+
+/* Sets an outer and inner drop shadow on the element to create a glowing effect on hover */
+.large_box:hover,
+.inner_box:hover{
+  box-shadow: inset 0px 0px 8px var(--nav-h-color), 0 0 15px var(--nav-h-color);
+  opacity:1;
+  cursor: pointer
+}
+
+/* Changes the font size as the width of the screen reduces to 950px */
+@media screen and (max-width:950px){
+    .content_item h1,
+    header h1 {
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 18px; 
+    }
+    header nav, 
+    .content_item div nav{
+        font-size: 14px;
+    }
+    .content_item h1{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    header,
+    header nav {
+      display:flex;
+      flex-direction: column;
+    }
+    header{
+        padding: 5px 10px 5px 10px;
+    }
+    header h1{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content_item h1,
+    header h1 {
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px; 
+    }    
+    header nav, 
+    .content_item div nav{
+        font-size: 12px;
+    }
+    .content_item h1{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+  }
+
+
+
+
