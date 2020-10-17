@@ -26,19 +26,21 @@ body {
 /* Creates padding on all sides of the header block and sets the font size, background color,
 color and relative position  */
 header {
-    padding: 10px 40px 20px 40px;
+    padding: 10px 0 20px 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--nav-color);
-    position: relative;
+    /* position: relative; */
+    display: flex;
 }
 
 /* Displays the header element as block and sets the font size  */
 header h1 {
-    display: inline-block;
+    /* display: inline-block; */
+    display:block;
     font-size: 40px;
     background-color: var(--nav-h-color);
     color: var(--dark-color);
-    position: absolute;
+    /* position: absolute; */
     text-align: right;
     left: 0px;
     width: 350px;
@@ -50,17 +52,21 @@ header nav {
     margin-right: 20px;
     float: right;
     font-size: 18px;
+    width:75%;
 }
 
 /* Removes bullet symbols from the list */
 header nav ul {
     list-style-type: none;
+    justify-content: flex-end;
+    float: right;
 }
 
 /* Sets the display of the list items and left margin */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    justify-content: flex-end;
 }
 
 /* Sets the color of the links and creates an underline */
@@ -97,6 +103,12 @@ figure {
     right: 50px;
 }
 
+img{
+    position: absolute;
+    height:100%;
+    bottom:0px;
+    left: 0px;
+}
 
 /* Sets margin, width and display parameters of the main block */
 main {
@@ -130,6 +142,7 @@ main {
     color: var(--h-font-color);
     border-right: solid var(--h-font-color);
 }
+
 
 /* Sets the display properties of the container inside each section */
 div{
@@ -284,13 +297,9 @@ p {
     header h1 {
         font-size: 20px;
     }
-    p{
+    p, header nav {
         font-size: 14px; 
     }    
-    header nav, 
-    .content_item div nav{
-        font-size: 12px;
-    }
     .content_item h1{
         margin-left: 5px;
         margin-right: 5px;
@@ -298,6 +307,16 @@ p {
     .subtitle{
         font-size: 14px;
         width: 200px;
+        bottom:0px;
+        left: 0px;
+        z-index: 2;
+    }
+    .content_item div nav ul{
+        flex-direction: column;
+    }
+    .content_item div nav {
+        padding-top: 0px;
+        font-size: 12px;
     }
   }
 
