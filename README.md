@@ -31,3 +31,8 @@ The folder contains  *.html* and  *.css* files and supplemental images.
 
 ![Screenshot](css_1.png)
 
+# Finished product
+The webpage looks like this:
+
+![Screenshot](final.png)
+
