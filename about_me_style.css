@@ -78,7 +78,7 @@ figure {
     height: 250px;
     width: 100vw;
     margin-bottom: 25px;
-    background-image: url("blanca_lake.jpeg");
+    background-image: url("./images/blanca_lake.jpeg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -152,7 +152,7 @@ div{
 /* Sets the display options and the properties of the large item in the work section */
 .large_box{
     height: 450px;
-    background-image: url("digital-marketing-meeting.jpg");
+    background-image: url("./images/Proj1.jpg");
     background-position: center;
     background-size: cover;
     border: solid var(--nav-h-color);
@@ -170,7 +170,7 @@ h3{
     text-align: left;
     padding: 8px;
     font-family: var(--typ-font);
-    font-size: 1.25em;
+    font-size: 0.9em;
     font-weight:bold;
     bottom: 15px;
     left: 0px;
@@ -184,7 +184,7 @@ h3 .sm {
 
 /* Sets the display options and the properties of the "row" that constains two small items in the work section */
 .small_box{
-    height: 120px;
+    height: 250px;
     margin-bottom:10px;
     display:flex;
     justify-content:space-between;
@@ -193,13 +193,41 @@ h3 .sm {
 /* Sets the display options and the properties of the small item in the work section */
 .inner_box{
     width: 49%; 
-    height: 120px;
+    height: 250px;
     background: rgba(0,34,36);
     background: linear-gradient(90deg, rgba(0,34,36,1) 0%, rgba(29,157,127,1) 35%, rgba(0,212,255,1) 100%);
     opacity:0.8;
     border: solid var(--nav-h-color);
     margin-bottom:10px;
     position: relative;
+}
+
+/* Sets the background image of the Weather Dashboard item in the work section */
+#weather{
+    background-image: url("./images/weather_dashboard.png");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Sets the background image of the Time Planner item in the work section */
+#planner{
+    background-image: url("./images/planner.png");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Sets the background image of the Coding Quiz item in the work section */
+#quiz{
+    background-image: url("./images/quiz.png");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Sets the background image of the Passord Generator item in the work section */
+#password{
+    background-image: url("./images/pw_gen.png");
+    background-position: center;
+    background-size: cover;
 }
 
 

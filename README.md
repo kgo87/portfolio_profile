@@ -18,7 +18,7 @@ The folder contains  *.html* and  *.css* files and supplemental images.
 * *Github* and *LinkedIn* buttons redirects to Github and LinkedIn pages respectively.
 * Screenshot of the part of the code is provided below:
                
-![Screenshot](html_1.png)
+![Screenshot](./images/html_1.png)
 
 
 ## CSS code
@@ -29,10 +29,10 @@ The folder contains  *.html* and  *.css* files and supplemental images.
 * Added functionality to display elements differently when the screen size changes
 * Screenshot of the part of the code is provided below:
 
-![Screenshot](css_1.png)
+![Screenshot](./images/css_1.png)
 
 # Finished product
 The webpage looks like this:
 
-![Screenshot](final.png)
+![Screenshot](./images/final.png)
 
