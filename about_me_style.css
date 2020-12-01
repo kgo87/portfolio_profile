@@ -159,6 +159,7 @@ div{
     margin-bottom:10px;
     position: relative;
     opacity:0.8;
+    flex-shrink: 4;
 }
 
 /* Sets the parameters of the title of each project inside work section */
@@ -194,6 +195,7 @@ h3 .sm {
 .inner_box{
     width: 49%; 
     height: 250px;
+    flex-shrink: 4;
     background: rgba(0,34,36);
     background: linear-gradient(90deg, rgba(0,34,36,1) 0%, rgba(29,157,127,1) 35%, rgba(0,212,255,1) 100%);
     opacity:0.8;
@@ -342,6 +344,9 @@ p {
     .content_item div nav {
         padding-top: 0px;
         font-size: 12px;
+    }
+    .small_box {
+        flex-direction: column;
     }
   }
 
