@@ -47,7 +47,6 @@ header h1 {
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-size: 18px;
     width:75%;
 }
@@ -72,16 +71,27 @@ header nav ul li a {
     border-bottom: solid 3px;
 }
 
+header nav ul li a:hover {
+  color: var(--light-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
 
 /* Sets the display properties of the top/background figure element */
 figure {
-    height: 250px;
+    height: 85vh;
     width: 100vw;
     margin-bottom: 25px;
-    background-image: url("./images/blanca_lake.jpeg");
+    background-image: url("./images/intro_kat.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+    -o-background-size: cover;
+    flex-shrink: 12;
 }
 
 /* Sets the properties of subtitle box */
@@ -99,19 +109,12 @@ figure {
     right: 50px;
 }
 
-/* Sets the properties of the headshot image */
-img{
-    position: absolute;
-    height:100%;
-    bottom:0px;
-    left: 0px;
-}
 
 /* Sets margin, width and display parameters of the main block */
 main {
     width: 100vw;
-    margin-left: 20px;
-    margin-right:20px;
+    margin-left: 10px;
+    margin-right:10px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -124,7 +127,7 @@ main {
     padding: 10px;
     font-family: var(--typ-font);
     display:flex;
-    width: 90vw;
+    width: 99vw;
     color: var(--h-font-color);
 }
 
@@ -149,18 +152,6 @@ div{
     width: 80%;
 }
 
-/* Sets the display options and the properties of the large item in the work section */
-.large_box{
-    height: 450px;
-    background-image: url("./images/Proj1.jpg");
-    background-position: center;
-    background-size: cover;
-    border: solid var(--nav-h-color);
-    margin-bottom:10px;
-    position: relative;
-    opacity:0.8;
-    flex-shrink: 4;
-}
 
 /* Sets the parameters of the title of each project inside work section */
 h3{
@@ -185,7 +176,7 @@ h3 .sm {
 
 /* Sets the display options and the properties of the "row" that constains two small items in the work section */
 .small_box{
-    height: 250px;
+    height: 400px;
     margin-bottom:10px;
     display:flex;
     justify-content:space-between;
@@ -194,7 +185,7 @@ h3 .sm {
 /* Sets the display options and the properties of the small item in the work section */
 .inner_box{
     width: 49%; 
-    height: 250px;
+    height: 100%;
     flex-shrink: 4;
     background: rgba(0,34,36);
     background: linear-gradient(90deg, rgba(0,34,36,1) 0%, rgba(29,157,127,1) 35%, rgba(0,212,255,1) 100%);
@@ -202,34 +193,72 @@ h3 .sm {
     border: solid var(--nav-h-color);
     margin-bottom:10px;
     position: relative;
+    max-width: 100%;
+    display: block;
+    max-height: 100%;
+}
+
+/* Sets the properties of the background images of the Weather Dashboard item in the work section */
+#weather, 
+#planner,
+#quiz,
+#celeb,
+#optimization,
+#classifier,
+#monte_carlo,
+#seismic,
+#readme,
+#team
+{
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    display: block;
+    max-height: 100%;
+    flex-shrink: 4;
+}
+
+/* Sets the background image of the Weather Dashboard item in the work section */
+#celeb{
+    background-image: url("./images/Proj1.JPG");
 }
 
 /* Sets the background image of the Weather Dashboard item in the work section */
 #weather{
-    background-image: url("./images/weather_dashboard.png");
-    background-position: center;
-    background-size: cover;
+    background-image: url("./images/weather_dashboard.JPG");
 }
 
 /* Sets the background image of the Time Planner item in the work section */
 #planner{
-    background-image: url("./images/planner.png");
-    background-position: center;
-    background-size: cover;
+    background-image: url("./images/planner.JPG");
 }
 
 /* Sets the background image of the Coding Quiz item in the work section */
 #quiz{
-    background-image: url("./images/quiz.png");
-    background-position: center;
-    background-size: cover;
+    background-image: url("./images/quiz.JPG");
 }
 
 /* Sets the background image of the Passord Generator item in the work section */
-#password{
-    background-image: url("./images/pw_gen.png");
-    background-position: center;
-    background-size: cover;
+#optimization{
+    background-image: url("./images/optimization.JPG");
+}
+
+#classifier {
+    background-image: url("./images/classifier.JPG");
+}
+
+#monte_carlo {
+    background-image: url("./images/mc_sim.JPG");
+}
+
+#seismic {
+    background-image: url("./images/building_seismic.JPG");
+}
+#readme {
+    background-image: url("./images/readme.png");
+}
+#team {
+    background-image: url("./images/team.jpeg");
 }
 
 
@@ -289,6 +318,9 @@ p {
 
 /* Changes the font size as the width of the screen reduces to 950px */
 @media screen and (max-width:950px){
+    figure {
+        height: 30vh;
+    }
     .content_item h1,
     header h1 {
         font-size: 24px;
@@ -310,6 +342,9 @@ p {
       display:flex;
       flex-direction: column;
     }
+    header nav ul {
+        justify-content: flex-start;
+    }
     header{
         padding: 5px 10px 5px 10px;
     }
@@ -324,19 +359,31 @@ p {
     header h1 {
         font-size: 20px;
     }
-    p, header nav {
+    p{
         font-size: 14px; 
-    }    
+    }
+    header,
+    header nav, 
+    header nav ul{
+      display:flex;
+      font-size: 12px;
+    }
+
+    header nav ul li{
+        margin-left: 10px;
+    }
+    header{
+        padding: 5px;
+    }
+    
     .content_item h1{
         margin-left: 5px;
         margin-right: 5px;
+        font-size: 16px;
     }
     .subtitle{
-        font-size: 14px;
-        width: 200px;
-        bottom:0px;
-        left: 0px;
-        z-index: 2;
+        display: none;
+
     }
     .content_item div nav ul{
         flex-direction: column;
@@ -347,6 +394,35 @@ p {
     }
     .small_box {
         flex-direction: column;
+        height:600px;
+    }
+    .inner_box {
+        width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+
+    
+    .content_item h1{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .subtitle{
+        display: none;
+
+    }
+    .content_item div nav ul{
+        flex-direction: column;
+    }
+
+    .small_box {
+        flex-direction: column;
+        height:300px;
+    }
+    .inner_box {
+        width: 90%;
     }
   }
 
