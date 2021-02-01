@@ -208,7 +208,9 @@ h3 .sm {
 #monte_carlo,
 #seismic,
 #readme,
-#team
+#team,
+#dance_db,
+#note_taker
 {
     background-position: center;
     background-size: cover;
@@ -218,11 +220,19 @@ h3 .sm {
     flex-shrink: 4;
 }
 
-/* Sets the background image of the Weather Dashboard item in the work section */
+
+/* Sets the background image of the Dance Classes item in the work section */
+#dance_db{
+    background-image: url("./images/dance_db.png");
+}
+/* Sets the background image of the Dance Classes item in the work section */
+#note_taker{
+    background-image: url("./images/note_taker.jpg");
+}
+/* Sets the background image of the Celebrity Checker item in the work section */
 #celeb{
     background-image: url("./images/proj1.JPG");
 }
-
 /* Sets the background image of the Weather Dashboard item in the work section */
 #weather{
     background-image: url("./images/weather_dashboard.JPG");
