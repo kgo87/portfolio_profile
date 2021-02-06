@@ -33,6 +33,10 @@ The folder contains  *.html* and  *.css* files and supplemental images.
 
 # Finished product
 The webpage looks like this:
+![Screenshot](./images/final_new.png)
 
-![Screenshot](./images/final.png)
+Mobile and iPad version are shown below:
+![Screenshot](./images/final_new_ipad.png)
+![Screenshot](./images/final_new_mob.png)
+
 
