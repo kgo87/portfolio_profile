@@ -84,13 +84,13 @@ figure {
     width: 100vw;
     margin-bottom: 25px;
     background-image: url("./images/intro_kat.jpg");
-    background-size: cover;
     background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: block;
+    max-height: 100%;
     position: relative;
-    -webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-    -o-background-size: cover;
     flex-shrink: 12;
 }
 
@@ -107,6 +107,7 @@ figure {
     font-weight:bold;
     bottom:10px;
     right: 50px;
+    border-radius: 5px;
 }
 
 
@@ -176,7 +177,7 @@ h3 .sm {
 
 /* Sets the display options and the properties of the "row" that constains two small items in the work section */
 .small_box{
-    height: 400px;
+    height: 370px;
     margin-bottom:10px;
     display:flex;
     justify-content:space-between;
@@ -210,16 +211,29 @@ h3 .sm {
 #readme,
 #team,
 #dance_db,
-#note_taker
+#note_taker,
+#gbooks,
+#virt
 {
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     max-width: 100%;
     display: block;
     max-height: 100%;
     flex-shrink: 4;
 }
 
+
+/* Sets the background image of the Virtual Asyctant item in the work section */
+#virt{
+    background-image: url("./images/virt.png");
+}
+
+/* Sets the background image of the Books Finder item in the work section */
+#gbooks{
+    background-image: url("./images/books.jpeg");
+}
 
 /* Sets the background image of the Dance Classes item in the work section */
 #dance_db{
